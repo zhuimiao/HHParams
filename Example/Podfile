@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HHParams_Example' do
+  pod 'HHParams', :path => '../'
+
+  target 'HHParams_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
