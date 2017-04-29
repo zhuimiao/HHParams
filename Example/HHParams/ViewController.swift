@@ -1,24 +1,149 @@
 //
 //  ViewController.swift
-//  HHParams
+//  CommonParams
 //
-//  Created by zhuimiao on 04/29/2017.
-//  Copyright (c) 2017 zhuimiao. All rights reserved.
+//  Created by boitx on 2017/4/29.
+//  Copyright © 2017年 boitx. All rights reserved.
 //
 
 import UIKit
+import HHParams
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction  func getCommonParams() {
+        // 获取运营商名称
+        var alertMessage = String()
+        let carriername = HHParams.carriername()
+        print("获取运营商名称：\(carriername)")
+        alertMessage.append("获取运营商名称："+carriername + "\n")
+        
+        
+        // 获取客户端版本号：
+        let client_v = HHParams.client_v()
+        print("获取客户端版本号：\(client_v)")
+        alertMessage.append("获取客户端版本号："+client_v + "\n")
+        
+        
+        // 获取手机用户名称
+        let phoneUserName = HHParams.phoneUserName()
+        print("获取手机用户名称：\(phoneUserName)")
+        alertMessage.append("获取手机用户名称："+phoneUserName + "\n")
+        
+        
+        
+        // ios版本号
+        let osversion = HHParams.osversion()
+        print("获取ios版本号：\(osversion)")
+        alertMessage.append("获取ios版本号："+osversion + "\n")
+        
+        // 手机型号
+        let phoneModel = HHParams.phoneModel()
+        print("获取手机型号：\(phoneModel)")
+        alertMessage.append("获取手机型号："+phoneModel + "\n")
+        
+        
+        //获取广告商id
+        let idfa = HHParams.getIDFA()
+        print("广告商id：\(idfa)")
+        alertMessage.append("广告商id:"+idfa + "\n")
+        
+        
+        //获取供应商id
+        let idfv = HHParams.getIDFV()
+        print("供应商id：\(idfv)")
+        alertMessage.append("供应商id"+idfv + "\n")
+        showAlert("常用参数", alertMessage)
     }
-
+    
+    /// 钥匙串保存密码
+    @IBAction  func passwordSaveWithKeyChain() {
+        let passwordkey = "password"
+        let passwordValue = "fdsfdssdfdsfdsfd"
+        
+        let tool = HHKeyChainTool()
+        tool.serviceName = "loginService"
+        
+        // 保存密码到 KeyChain
+        tool .hh_setValue(passwordValue, passwordkey)
+        // 从 KeyChain 读取密码
+        let keyChainPassword:String = tool.hh_valueForKey(passwordkey)
+        print("从 KeyChain 中获取的登录密码：\(keyChainPassword)")
+        let alertMessage = ("从 KeyChain 中获取的登录密码：\(keyChainPassword)")
+        showAlert("钥匙串保存密码", alertMessage)
+    }
+    
+    
+    /// 从钥匙串清除密码
+    func clearPasswordFromKeyChain()
+    {
+        let tool = HHKeyChainTool()
+        tool.serviceName = "loginService"
+        
+        tool.hh_deleteItems()
+    }
+    
+    
+    
+    /// 使用 KeyChain 保存和获取 udid
+    /// udid 可用 广告商id（idfa）或 供应商id（idfv）代替
+    /// 为了解决这个问题：App 卸载重新安装后udid 发生改变
+    @IBAction  func udidWithKeyChain() {
+        let tool = HHKeyChainTool()
+        tool.serviceName = "udidService"
+        
+        var alertMessage = String()
+        
+        // 保存 广告商id
+        var idfa:String = ""
+        let idfaKey = "idfa"
+        
+        idfa = tool.hh_valueForKey(idfaKey)
+        if idfa == "" {
+            idfa = HHParams.getIDFA()
+            tool.hh_setValue(idfa, idfaKey)
+        }
+        print("广告商id为:\(idfa)")
+        alertMessage.append("广告商id："+idfa + "\n")
+        
+        
+        // 保存 供应商id
+        var idfv:String = ""
+        let idfvKey = "idfv"
+        
+        idfv = tool.hh_valueForKey(idfvKey)
+        if idfv == "" {
+            idfv = HHParams.getIDFA()
+            tool.hh_setValue(idfv, idfvKey)
+        }
+        print("供应商id为:\(idfv)")
+        alertMessage.append("供应商id："+idfv + "\n")
+        showAlert("从钥匙串读取udid", alertMessage)
+    }
+    
+    /// 获取其它 App 的内容， App间通讯的一种方式
+    /// 即：获取其它 App 保存在 KeyChain 中的内容
+    @IBAction func getDataFromOtherApp() {
+        let tool = HHKeyChainTool()
+        tool.serviceName = "shareDataService"
+        tool.accessGroup = "574C886U7L.org.boitx.mimamiao"
+        let groupShareDataKey = "ShareDataKey"
+        let groupShareDataValue = tool.hh_valueForKey(groupShareDataKey)
+        print("groupShareDataValue:\(groupShareDataValue)")
+        showAlert("从钥匙串读取到的数据", groupShareDataValue)
+        
+    }
+    
+    func showAlert(_ title:String, _ message:String) {
+        let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction.init(title: "确定", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 

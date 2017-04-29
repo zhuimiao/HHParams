@@ -1,0 +1,6 @@
+framework module Pods_HHParams_Tests {
+  umbrella header "Pods-HHParams_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

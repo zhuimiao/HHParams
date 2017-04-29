@@ -1,0 +1,6 @@
+framework module HHParams {
+  umbrella header "HHParams-umbrella.h"
+
+  export *
+  module * { export * }
+}
