@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHParams'
-  s.version          = '0.2.0'
-  s.summary          = 'HHParams is the best way get params of ios '
+  s.version          = '0.2.1'
+  s.summary          = 'HHParams is the best way get common params'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'HHParams is the best way get params with swift '
+  s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
