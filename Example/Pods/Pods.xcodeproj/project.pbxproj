@@ -8,17 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0437061EF0E7238B9ACB7BB93436C591 /* Pods-HHParams_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C9CD5B4DCD16837DB97509CEE983CF /* Pods-HHParams_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DE5F0C0E4DC91C8517E2C46B33E59B7 /* HHKeyChainConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5507769E55375C3E651DA57A48E5484 /* HHKeyChainConfig.swift */; };
-		2184AA64A16D2473DE39BC33B10E63BC /* HHParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333871828DCC7DCF6B6FFD8965B1CD8 /* HHParams.swift */; };
+		19442DB7A6B61311B74EA5C042A07559 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CE4AA22E0E180E5CB9D5F01A83B0F /* KeychainPasswordItem.swift */; };
 		2CEC0E06352527B5F33FE0049DD873FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2E7404F8AF8BB1AE7E1E748F61022B82 /* HHKeyChainTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB66107F75C27F78D8F736B4FA9B3D /* HHKeyChainTool.swift */; };
-		4D51AB7CAF5DD40CA2A3EE99185D72C1 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B01A0B849B22E7DF83F4EE8DBB457F0 /* KeychainPasswordItem.swift */; };
-		4FFDC9106A703025FDE3137E0160B5DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2EBC9910D0C8304785DF840BD4160F77 /* HHParams-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EBEF3CC822D06668380815A103F396 /* HHParams-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EAD8FA23CD4F6FFB30B3D8C86C35201 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		76A39596A9DF686D8AA2789D8018E014 /* HHParams-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3EA2120F75FD73905A0D2DB14B97AC /* HHParams-dummy.m */; };
 		8633CFB438F82B45AC4C544E77E82F4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9D9C71D4420C7DFE6B26ED29CD6A2746 /* HHParams-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E0121FC40691642862D52F3C9463E1 /* HHParams-dummy.m */; };
 		9EADD60216FB6F4CFAF003C54F110CAD /* Pods-HHParams_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD4CCF3B36126276EFFD49086101AE5 /* Pods-HHParams_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF5B4FA2B4A5243FED9514AC6FD11B8F /* HHKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E4E6C188018BD35359FB438B2D8133 /* HHKeyChain.swift */; };
 		CEB0406E3EAE9E65C9F64D307769CF8D /* Pods-HHParams_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D01A74019DB40BBD4ACA2508924C486 /* Pods-HHParams_Tests-dummy.m */; };
-		DB576B35D6B7EF9EA1575CFE6AEE9662 /* HHParams-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFA78E3F2A4433B7A2E1B5DDD722BDB /* HHParams-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D94461FEAB58FFC5C698627E85B3E44E /* HHParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489A7095F11C3AE5373DBDD45F31A8F7 /* HHParams.swift */; };
 		F0F83DB0DD01C4E3744D469D6DE18743 /* Pods-HHParams_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D8C15FDE71A9D6D8F3500731CD17E /* Pods-HHParams_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -27,63 +26,62 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 99A02561B4D4B1B65E28EB1BE4D10F1B;
+			remoteGlobalIDString = 6A4E39C8762CAF914148AE8338FC8E19;
 			remoteInfo = HHParams;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0333871828DCC7DCF6B6FFD8965B1CD8 /* HHParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HHParams.swift; sourceTree = "<group>"; };
 		0E7C7D40A57D015348217DCD343B34D4 /* Pods-HHParams_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHParams_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		11EE877C5F562AC7BB8D0A740193A6A7 /* Pods-HHParams_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHParams_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		158D8C15FDE71A9D6D8F3500731CD17E /* Pods-HHParams_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHParams_Example-dummy.m"; sourceTree = "<group>"; };
-		27EB66107F75C27F78D8F736B4FA9B3D /* HHKeyChainTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HHKeyChainTool.swift; sourceTree = "<group>"; };
+		17EBEF3CC822D06668380815A103F396 /* HHParams-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHParams-umbrella.h"; sourceTree = "<group>"; };
+		19E4E6C188018BD35359FB438B2D8133 /* HHKeyChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HHKeyChain.swift; sourceTree = "<group>"; };
 		44319501E826830C38B330E69F174431 /* Pods-HHParams_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHParams_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		489A7095F11C3AE5373DBDD45F31A8F7 /* HHParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HHParams.swift; sourceTree = "<group>"; };
 		4B2C6F1BB130EBEF62EA2D9F82621E26 /* Pods-HHParams_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHParams_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4D91CDE2D3888884BA2325C38D032996 /* Pods-HHParams_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHParams_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		50BBE222BEC40CB20736442DDA4473C3 /* Pods-HHParams_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHParams_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		543E2F65780F06271A2B4FDC97AD0C1A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649EDDBAF46EE8C8DA25D35D59CB0FFC /* Pods_HHParams_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HHParams_Tests.framework; path = "Pods-HHParams_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C63D109995A1C6F2852B12DF980119 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6B01A0B849B22E7DF83F4EE8DBB457F0 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		6D01A74019DB40BBD4ACA2508924C486 /* Pods-HHParams_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHParams_Tests-dummy.m"; sourceTree = "<group>"; };
+		6DEB56B9E97EF5EB72C014307C9D0C39 /* HHParams-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHParams-prefix.pch"; sourceTree = "<group>"; };
+		6E56B4F6B48F5DC8E78C9BC85B2CC4A8 /* HHParams.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HHParams.modulemap; sourceTree = "<group>"; };
 		6FD4CCF3B36126276EFFD49086101AE5 /* Pods-HHParams_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHParams_Tests-umbrella.h"; sourceTree = "<group>"; };
 		79096DC0CFD1D5A83C1A77EF0B6BF2EF /* Pods_HHParams_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HHParams_Example.framework; path = "Pods-HHParams_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DFA78E3F2A4433B7A2E1B5DDD722BDB /* HHParams-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHParams-umbrella.h"; sourceTree = "<group>"; };
 		7EAC11C4E58DA95DE9B18031B73BD2D3 /* Pods-HHParams_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHParams_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8347D164909893550479DD2AC57885A8 /* Pods-HHParams_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHParams_Tests-resources.sh"; sourceTree = "<group>"; };
+		835CE4AA22E0E180E5CB9D5F01A83B0F /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		907D0733C8467F0BE50B4F2B4D42B135 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9198468D4ED532773E40727E7512F606 /* HHParams.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHParams.xcconfig; sourceTree = "<group>"; };
 		92B6B686C207E9D277189521EA56D556 /* Pods-HHParams_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHParams_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DCC440FA1C0BCFC878C99BE93FC5BF8 /* HHParams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HHParams.framework; path = HHParams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A191B4BBE0582F93BFA7021558B38941 /* Pods-HHParams_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HHParams_Example.modulemap"; sourceTree = "<group>"; };
-		A5507769E55375C3E651DA57A48E5484 /* HHKeyChainConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HHKeyChainConfig.swift; sourceTree = "<group>"; };
-		BA8979BC2D51448F6775F2039D4F15B5 /* HHParams-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHParams-prefix.pch"; sourceTree = "<group>"; };
 		BAE151C740A7662DD49EFDE309A3F865 /* Pods-HHParams_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHParams_Example-resources.sh"; sourceTree = "<group>"; };
-		C4A3FE2ED931B8A664CFB9913500D696 /* HHParams.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HHParams.modulemap; sourceTree = "<group>"; };
+		BF3EA2120F75FD73905A0D2DB14B97AC /* HHParams-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHParams-dummy.m"; sourceTree = "<group>"; };
 		C5A3FAE60955BE9E0966C6484E4D9D7E /* Pods-HHParams_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHParams_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C8E0121FC40691642862D52F3C9463E1 /* HHParams-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHParams-dummy.m"; sourceTree = "<group>"; };
-		CEB60454A6365012904FA66197DFE03E /* HHParams.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHParams.xcconfig; sourceTree = "<group>"; };
 		D5377A13DE107758D58FDFD069333497 /* Pods-HHParams_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHParams_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D78DC40984DDC9700B0D80C80913F83B /* Pods-HHParams_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HHParams_Tests.modulemap"; sourceTree = "<group>"; };
 		D7C9CD5B4DCD16837DB97509CEE983CF /* Pods-HHParams_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHParams_Example-umbrella.h"; sourceTree = "<group>"; };
-		DDD546268E8B3E520590385A7061EF2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1937C33A287CBBCE3389E4C78B9B0F9C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FFDC9106A703025FDE3137E0160B5DA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		53C0D2F71355842982C28F2A8F0DEB3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2CEC0E06352527B5F33FE0049DD873FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CCB935110B4DC404C27B596D87E601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EAD8FA23CD4F6FFB30B3D8C86C35201 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,14 +106,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		237C9F5F6A5FBFD8F2E360F0AB2349B4 /* HHParams */ = {
+		5D1BCA4B163B3D8109162A1D1B0B9776 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C2BD8AE76FC67C1DF61BA2A7148235BA /* Source */,
-				C311C457B4A254CAA5CDD3DDDF46776A /* Support Files */,
+				19E4E6C188018BD35359FB438B2D8133 /* HHKeyChain.swift */,
+				489A7095F11C3AE5373DBDD45F31A8F7 /* HHParams.swift */,
+				835CE4AA22E0E180E5CB9D5F01A83B0F /* KeychainPasswordItem.swift */,
 			);
-			name = HHParams;
-			path = ../..;
+			name = Source;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5DB7D8418D779E66F405E0849DB0BF99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E56B4F6B48F5DC8E78C9BC85B2CC4A8 /* HHParams.modulemap */,
+				9198468D4ED532773E40727E7512F606 /* HHParams.xcconfig */,
+				BF3EA2120F75FD73905A0D2DB14B97AC /* HHParams-dummy.m */,
+				6DEB56B9E97EF5EB72C014307C9D0C39 /* HHParams-prefix.pch */,
+				17EBEF3CC822D06668380815A103F396 /* HHParams-umbrella.h */,
+				543E2F65780F06271A2B4FDC97AD0C1A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HHParams";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -168,7 +181,7 @@
 		B92D8EB28A515683C25CEBF86C6249C2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				237C9F5F6A5FBFD8F2E360F0AB2349B4 /* HHParams */,
+				EEB04C830C543C5BC0A2A4DC66F4374F /* HHParams */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -181,38 +194,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C2BD8AE76FC67C1DF61BA2A7148235BA /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A5507769E55375C3E651DA57A48E5484 /* HHKeyChainConfig.swift */,
-				27EB66107F75C27F78D8F736B4FA9B3D /* HHKeyChainTool.swift */,
-				0333871828DCC7DCF6B6FFD8965B1CD8 /* HHParams.swift */,
-				6B01A0B849B22E7DF83F4EE8DBB457F0 /* KeychainPasswordItem.swift */,
-			);
-			name = Source;
-			path = Source;
-			sourceTree = "<group>";
-		};
-		C311C457B4A254CAA5CDD3DDDF46776A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4A3FE2ED931B8A664CFB9913500D696 /* HHParams.modulemap */,
-				CEB60454A6365012904FA66197DFE03E /* HHParams.xcconfig */,
-				C8E0121FC40691642862D52F3C9463E1 /* HHParams-dummy.m */,
-				BA8979BC2D51448F6775F2039D4F15B5 /* HHParams-prefix.pch */,
-				7DFA78E3F2A4433B7A2E1B5DDD722BDB /* HHParams-umbrella.h */,
-				DDD546268E8B3E520590385A7061EF2E /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HHParams";
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EEB04C830C543C5BC0A2A4DC66F4374F /* HHParams */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BCA4B163B3D8109162A1D1B0B9776 /* Source */,
+				5DB7D8418D779E66F405E0849DB0BF99 /* Support Files */,
+			);
+			name = HHParams;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F528815A64F18A94E3194434A1C47610 /* Targets Support Files */ = {
@@ -227,6 +224,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		038AC16DC325A9D81BBE01EA814EDCBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBC9910D0C8304785DF840BD4160F77 /* HHParams-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ED67D91622291636DAF03A0CC1DEE28 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,14 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0437061EF0E7238B9ACB7BB93436C591 /* Pods-HHParams_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B24BB907056D97BD74F115B9C68BFB8D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB576B35D6B7EF9EA1575CFE6AEE9662 /* HHParams-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +269,23 @@
 			productReference = 79096DC0CFD1D5A83C1A77EF0B6BF2EF /* Pods_HHParams_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		6A4E39C8762CAF914148AE8338FC8E19 /* HHParams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BFC5D639AC16B9EE1AE09471E818C17 /* Build configuration list for PBXNativeTarget "HHParams" */;
+			buildPhases = (
+				FF91BB81739BAF824FA402579B7205CE /* Sources */,
+				76CCB935110B4DC404C27B596D87E601 /* Frameworks */,
+				038AC16DC325A9D81BBE01EA814EDCBF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHParams;
+			productName = HHParams;
+			productReference = 9DCC440FA1C0BCFC878C99BE93FC5BF8 /* HHParams.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		76D3A82D2AB36830324452B45A9CD89C /* Pods-HHParams_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847F8ACE3801EE8F24BF9B2BBA8D098A /* Build configuration list for PBXNativeTarget "Pods-HHParams_Tests" */;
@@ -287,23 +301,6 @@
 			name = "Pods-HHParams_Tests";
 			productName = "Pods-HHParams_Tests";
 			productReference = 649EDDBAF46EE8C8DA25D35D59CB0FFC /* Pods_HHParams_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		99A02561B4D4B1B65E28EB1BE4D10F1B /* HHParams */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4C9B1ECB222A2383B5A51952E6D39FF /* Build configuration list for PBXNativeTarget "HHParams" */;
-			buildPhases = (
-				0F5951FAD4090FCB0976D81B7C009D8D /* Sources */,
-				1937C33A287CBBCE3389E4C78B9B0F9C /* Frameworks */,
-				B24BB907056D97BD74F115B9C68BFB8D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HHParams;
-			productName = HHParams;
-			productReference = 9DCC440FA1C0BCFC878C99BE93FC5BF8 /* HHParams.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,7 +324,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99A02561B4D4B1B65E28EB1BE4D10F1B /* HHParams */,
+				6A4E39C8762CAF914148AE8338FC8E19 /* HHParams */,
 				5D0DEF00F87A4CB0008765D953EB3C6A /* Pods-HHParams_Example */,
 				76D3A82D2AB36830324452B45A9CD89C /* Pods-HHParams_Tests */,
 			);
@@ -335,18 +332,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0F5951FAD4090FCB0976D81B7C009D8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DE5F0C0E4DC91C8517E2C46B33E59B7 /* HHKeyChainConfig.swift in Sources */,
-				2E7404F8AF8BB1AE7E1E748F61022B82 /* HHKeyChainTool.swift in Sources */,
-				9D9C71D4420C7DFE6B26ED29CD6A2746 /* HHParams-dummy.m in Sources */,
-				2184AA64A16D2473DE39BC33B10E63BC /* HHParams.swift in Sources */,
-				4D51AB7CAF5DD40CA2A3EE99185D72C1 /* KeychainPasswordItem.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		852820DBB837B3099C165928629BBB29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,21 +348,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF91BB81739BAF824FA402579B7205CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5B4FA2B4A5243FED9514AC6FD11B8F /* HHKeyChain.swift in Sources */,
+				76A39596A9DF686D8AA2789D8018E014 /* HHParams-dummy.m in Sources */,
+				D94461FEAB58FFC5C698627E85B3E44E /* HHParams.swift in Sources */,
+				19442DB7A6B61311B74EA5C042A07559 /* KeychainPasswordItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		501D589170C1AA7EC90C7F4F8064C8C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HHParams;
-			target = 99A02561B4D4B1B65E28EB1BE4D10F1B /* HHParams */;
+			target = 6A4E39C8762CAF914148AE8338FC8E19 /* HHParams */;
 			targetProxy = 867612676B3E0BCEC701D9099FF39F05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		39C0E4CEFF7230896632207CCE9A083C /* Release */ = {
+		2B2C6FF058B92EEF3DB5ACD29A6C2AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB60454A6365012904FA66197DFE03E /* HHParams.xcconfig */;
+			baseConfigurationReference = 9198468D4ED532773E40727E7512F606 /* HHParams.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -570,41 +566,6 @@
 			};
 			name = Debug;
 		};
-		9307F29C197586D04C475B1095DB9819 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB60454A6365012904FA66197DFE03E /* HHParams.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HHParams/HHParams-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HHParams/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HHParams/HHParams.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HHParams;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -685,6 +646,41 @@
 			};
 			name = Debug;
 		};
+		DF026C2EBC39878AA628A4495C3CC2EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9198468D4ED532773E40727E7512F606 /* HHParams.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HHParams/HHParams-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HHParams/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HHParams/HHParams.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HHParams;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -693,6 +689,15 @@
 			buildConfigurations = (
 				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
 				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BFC5D639AC16B9EE1AE09471E818C17 /* Build configuration list for PBXNativeTarget "HHParams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF026C2EBC39878AA628A4495C3CC2EF /* Debug */,
+				2B2C6FF058B92EEF3DB5ACD29A6C2AA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -711,15 +716,6 @@
 			buildConfigurations = (
 				7001B120470F7330CE4D5CC6FEB6778F /* Debug */,
 				66C711829232DCCF1648A5F556B3DA65 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D4C9B1ECB222A2383B5A51952E6D39FF /* Build configuration list for PBXNativeTarget "HHParams" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9307F29C197586D04C475B1095DB9819 /* Debug */,
-				39C0E4CEFF7230896632207CCE9A083C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

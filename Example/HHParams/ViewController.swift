@@ -63,16 +63,18 @@ class ViewController: UIViewController {
     
     /// 钥匙串保存密码
     @IBAction  func passwordSaveWithKeyChain() {
-        let passwordkey = "password"
-        let passwordValue = "fdsfdssdfdsfdsfd"
-        
-        let tool = HHKeyChainTool()
+        //创建钥匙串管理对象
+        let tool = HHKeyChain()
+        //设置服务名称
         tool.serviceName = "loginService"
+        //设置 key ，value
+        let key = "username"
+        let value = "password"
         
-        // 保存密码到 KeyChain
-        tool .hh_setValue(passwordValue, passwordkey)
+        // 保存 value 到 KeyChain
+        tool .hh_setValue(value, key)
         // 从 KeyChain 读取密码
-        let keyChainPassword:String = tool.hh_valueForKey(passwordkey)
+        let keyChainPassword:String = tool.hh_valueForKey(key)
         print("从 KeyChain 中获取的登录密码：\(keyChainPassword)")
         let alertMessage = ("从 KeyChain 中获取的登录密码：\(keyChainPassword)")
         showAlert("钥匙串保存密码", alertMessage)
@@ -82,7 +84,7 @@ class ViewController: UIViewController {
     /// 从钥匙串清除密码
     func clearPasswordFromKeyChain()
     {
-        let tool = HHKeyChainTool()
+        let tool = HHKeyChain()
         tool.serviceName = "loginService"
         
         tool.hh_deleteItems()
@@ -94,10 +96,10 @@ class ViewController: UIViewController {
     /// udid 可用 广告商id（idfa）或 供应商id（idfv）代替
     /// 为了解决这个问题：App 卸载重新安装后udid 发生改变
     @IBAction  func udidWithKeyChain() {
-        let tool = HHKeyChainTool()
-        tool.serviceName = "udidService"
-        
         var alertMessage = String()
+
+        let tool = HHKeyChain()
+        tool.serviceName = "udidService"
         
         // 保存 广告商id
         var idfa:String = ""
@@ -129,7 +131,7 @@ class ViewController: UIViewController {
     /// 获取其它 App 的内容， App间通讯的一种方式
     /// 即：获取其它 App 保存在 KeyChain 中的内容
     @IBAction func getDataFromOtherApp() {
-        let tool = HHKeyChainTool()
+        let tool = HHKeyChain()
         tool.serviceName = "shareDataService"
         tool.accessGroup = "574C886U7L.org.boitx.mimamiao"
         let groupShareDataKey = "ShareDataKey"

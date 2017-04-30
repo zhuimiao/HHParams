@@ -16,7 +16,7 @@ import Foundation
  */
 
 
- public class HHKeyChainTool: NSObject {
+ public class HHKeyChain: NSObject {
     
     /// 服务名称：比如登录服务，udid服务
     public var serviceName = "MyAppService"

@@ -101,6 +101,6 @@ public   func getIDFA() -> String {
 ///
 /// - Returns: advertisingIdentifier.uuidString
 public        func getIDFV() -> String {
-    return ASIdentifierManager.shared().advertisingIdentifier.uuidString
+    return UIDevice.current.identifierForVendor!.uuidString
 }
 
