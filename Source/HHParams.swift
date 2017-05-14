@@ -104,3 +104,33 @@ public        func getIDFV() -> String {
     return UIDevice.current.identifierForVendor!.uuidString
 }
 
+/// 获取电池电量
+public        func getBatteryQuantity() -> Float {
+    return UIDevice.current.batteryLevel
+}
+
+/// 总运行内存大小
+public func getRAMTotal() -> Float{
+    return Float(ProcessInfo.processInfo.physicalMemory)/1024.0/1024.0
+}
+
+/// 当前可用运行内存
+public func getRAMAvailable() -> Double{
+   let vmStats = vm_statistics()
+    return Double(vmStats.free_count)/1024.0/1024.0
+}
+
+/// 当前总磁盘内存
+public func getROMTotal() -> Float{
+    let buf = statfs()
+    return Float(UInt64(buf.f_bsize) * buf.f_blocks)/1024.0/1024.0
+}
+
+/// 获取磁盘可用内存
+public func getROMAvailable() -> Float{
+    let buf = statfs()
+    return Float(UInt64(buf.f_bsize) * buf.f_bavail)/1024.0/1024.0
+}
+
+
+

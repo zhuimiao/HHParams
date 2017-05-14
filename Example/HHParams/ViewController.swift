@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     
@@ -140,6 +141,36 @@ class ViewController: UIViewController {
         showAlert("从钥匙串读取到的数据", groupShareDataValue)
         
     }
+    
+    @IBAction func getRAMROM(_ sender: UIButton) {
+        
+        var alertMessage = String()
+        let neicun = HHParams.getRAMTotal()
+        print("总内存大小：\(neicun)")
+        alertMessage.append("总内存大小：\(neicun)" + "\n")
+
+        
+        let keyongneicun = HHParams.getRAMAvailable()
+        print("可用内存大小：\(keyongneicun)")
+        alertMessage.append("可用内存大小：\(keyongneicun)" + "\n")
+
+        
+        let cipan = HHParams.getROMTotal()
+        print("总磁盘大小：\(cipan)")
+        alertMessage.append("总磁盘大小：\(cipan)" + "\n")
+
+        
+        let keyongcipan = HHParams.getROMAvailable()
+        print("可用磁盘大小：\(keyongcipan)")
+        alertMessage.append("可用磁盘大小：\(keyongcipan)" + "\n")
+
+        
+        let dianliang = HHParams.getBatteryQuantity()
+        print("电量：\(dianliang)")
+        alertMessage.append("电量：\(dianliang)" + "\n")
+        showAlert("电量RAMROM", alertMessage)
+    }
+    
     
     func showAlert(_ title:String, _ message:String) {
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)

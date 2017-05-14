@@ -1,5 +1,5 @@
 PODS:
-  - HHParams (0.1.0)
+  - HHParams (0.2.1)
 
 DEPENDENCIES:
   - HHParams (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  HHParams: e5f382c5e77091560febc2ee810d1eb100fc865e
+  HHParams: adae9623f0d4620923cf8db4ec55c842fc9c7c0f
 
 PODFILE CHECKSUM: e214484748292e00869d1080772100389b14d4a0
 

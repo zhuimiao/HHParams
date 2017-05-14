@@ -1,7 +1,7 @@
 {
   "name": "HHParams",
-  "version": "0.1.0",
-  "summary": "the best way get common params",
+  "version": "0.2.1",
+  "summary": "HHParams is the best way get common params",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zhuimiao/HHParams",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zhuimiao/HHParams.git",
-    "tag": "0.1.0"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "9.0"
